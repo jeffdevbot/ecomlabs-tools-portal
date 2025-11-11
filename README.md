@@ -1,4 +1,4 @@
-# Ecomlabs Tools Portal
+# Ecomlabs Tools Portal 
 
 Monorepo scaffold for the Ecomlabs internal tools portal. The project ships a Next.js App Router application with Supabase Google sign-in, role-based access control, and the first Ops chat tool stubbed against mocked ClickUp data. Future tools (such as the N-gram analyzer) can be added under the shared workspace structure.
 
