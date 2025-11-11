@@ -1,7 +1,10 @@
 {
   "name": "ecomlabs-tools-portal",
   "private": true,
-  "packageManager": "pnpm@8.15.4",
+  "packageManager": "pnpm@9.12.3",
+  "engines": {
+    "node": "^18.18.0 || ^20.11.0"
+  },
   "scripts": {
     "dev": "pnpm --filter portal dev",
     "build": "pnpm turbo run build",
