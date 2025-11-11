@@ -1,0 +1,14 @@
+{
+  "name": "ecomlabs-tools-portal",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "dev": "pnpm --filter portal dev",
+    "build": "pnpm turbo run build",
+    "lint": "pnpm turbo run lint",
+    "test": "pnpm turbo run test"
+  },
+  "devDependencies": {
+    "turbo": "^1.12.4"
+  }
+}
