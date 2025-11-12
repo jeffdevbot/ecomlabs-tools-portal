@@ -116,7 +116,7 @@ export function OpsChat() {
             <Input
               placeholder="status client-x ppc"
               value={input}
-              onChange={(event) => setInput(event.target.value)}
+              onChange={(event: React.ChangeEvent<HTMLInputElement>) => setInput(event.target.value)}
               disabled={isLoading}
             />
             <Button type="submit" disabled={isLoading}>
