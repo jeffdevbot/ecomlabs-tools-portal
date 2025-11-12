@@ -1,6 +1,7 @@
 {
   "name": "ecomlabs-tools-portal",
   "private": true,
+
   "packageManager": "pnpm@9.12.4",
   "engines": {
     "node": ">=20.0.0 <21",
