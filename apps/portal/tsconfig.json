@@ -20,6 +20,12 @@
       "@ecomlabs/clickup": ["../../packages/clickup/src"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.d.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.d.ts",
+    "../../packages/auth/src/**/*.d.ts"
+  ],
   "exclude": ["node_modules"]
 }
