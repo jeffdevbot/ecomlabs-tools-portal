@@ -1,5 +1,3 @@
-"use server";
-
 import { cookies } from "next/headers";
 import { createServerComponentClient, createMiddlewareClient } from "@supabase/auth-helpers-nextjs";
 import { type NextRequest, NextResponse } from "next/server";
