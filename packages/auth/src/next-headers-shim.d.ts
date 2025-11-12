@@ -25,3 +25,15 @@ declare module "next/headers" {
 
   export function cookies(): MutableRequestCookies;
 }
+
+declare module "next/server" {
+  export type NextRequest = Request & {
+    cookies: import("next/headers").MutableRequestCookies;
+  };
+
+  export class NextResponse extends Response {
+    static json<T>(body: T, init?: ResponseInit): NextResponse;
+    static redirect(url: string | URL, init?: number | ResponseInit): NextResponse;
+    static next(init?: ResponseInit): NextResponse;
+  }
+}
