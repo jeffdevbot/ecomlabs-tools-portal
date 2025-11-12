@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { Button, ChatBubble, Input, KanbanBoard, Card, CardHeader, CardTitle, CardContent } from "@ecomlabs/ui";
-import type { OpsStatusSummary } from "@ecomlabs/types";
+import type { OpsStatusSummary, OpsStatusColumn } from "@ecomlabs/types";
 
 interface TranscriptMessage {
   id: string;
@@ -63,7 +63,10 @@ export function OpsChat() {
         {
           id: `${id}-summary`,
           role: "assistant",
-          content: `Found ${summary.columns.reduce((total: number, column) => total + column.count, 0)} tasks across ${summary.columns.length} columns for ${client.toUpperCase()} (${scope.toUpperCase()}).`,
+          content: `Found ${summary.columns.reduce(
+            (total: number, column: OpsStatusColumn) => total + column.count,
+            0
+          )} tasks across ${summary.columns.length} columns for ${client.toUpperCase()} (${scope.toUpperCase()}).`,
           summary
         }
       ]);
