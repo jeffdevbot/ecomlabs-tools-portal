@@ -63,7 +63,7 @@ export function OpsChat() {
         {
           id: `${id}-summary`,
           role: "assistant",
-          content: `Found ${summary.columns.reduce((total, column) => total + column.count, 0)} tasks across ${summary.columns.length} columns for ${client.toUpperCase()} (${scope.toUpperCase()}).`,
+          content: `Found ${summary.columns.reduce((total: number, column) => total + column.count, 0)} tasks across ${summary.columns.length} columns for ${client.toUpperCase()} (${scope.toUpperCase()}).`,
           summary
         }
       ]);
